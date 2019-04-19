@@ -1,0 +1,29 @@
+{
+  "name": "roses",
+  "version": "1.0.0",
+  "description": "roses",
+  "main": "app.js",
+  "scripts": {
+    "test": "rose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiyunfei123/roses.git"
+  },
+  "keywords": [
+    "rose"
+  ],
+  "author": "qyf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiyunfei123/roses/issues"
+  },
+  "homepage": "https://github.com/qiyunfei123/roses#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mysql": "^2.17.1"
+  }
+}
