@@ -7,10 +7,11 @@ const express = require("express");
 const cors = require("cors");
 //2:创建连接池 很大提高效率方法
 var pool = mysql.createPool({
-    host:"127.0.0.1",
-    user:"root",
-    password:"",
-    database:"flower"
+  host     : process.env.MYSQL_HOST,
+  port     : process.env.MYSQL_PORT,
+  user     : process.env.ACCESSKEY,
+  password : process.env.SECRETKEY,
+  database : 'app_' + process.env.APPNAME
 });
 //3:创建express对象
 var server = express();
@@ -41,7 +42,7 @@ server.use(bodyParser.urlencoded(
   {extended:false}
 ))
 //4:为express对象绑定监听端口 3000
-server.listen(3000);
+server.listen(5050);
 
 //功能一：轮播图
 server.get("/imglist",(req,res)=>{

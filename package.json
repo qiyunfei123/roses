@@ -4,7 +4,8 @@
   "description": "roses",
   "main": "app.js",
   "scripts": {
-    "test": "rose"
+    "test": "rose",
+    "start":"node app.js"
   },
   "repository": {
     "type": "git",
